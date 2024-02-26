@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Outside - Minimalist Ecommerce HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    
+    
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./public/shop_static/css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="./public/shop_static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/shop_static/css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="./public/shop_static/css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="./public/shop_static/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="./public/shop_static/css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="./public/shop_static/js/modernizr-2.8.3.min.js"></script>
+
+    <script src="./public/shop_static/js/login.js"></script>
+    
+</head>
+
+<body>
+
+<!-- Body main wrapper start -->
+<div class="wrapper">
+
+<!-- START HEADER SECTION -->
+<header class="header-section section sticker">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <!-- logo -->
+                <div class="header-logo">
+                    <a href="/index"><img src="public/shop_static/picture/logo.png" alt="main logo"></a>
+                </div>
+            </div>
+            <div class="col-auto d-flex">
+                <!-- header-search & total-cart -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="/index">Home</a>
+                        </li>
+                        <li><a href="/shop">shop</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- header-search & total-cart -->
+                <div class="header-option-btns d-flex">
+                    <!-- header-search -->
+                    <div class="header-search" id="login-name">
+                        <!-- <div>HI,XXX</div> -->
+                        <!-- <script>login_function("{{email}}","{{name}}");</script> -->
+                    </div>
+                    <!-- header Account -->
+                    <div class="header-account">
+                        <ul>
+                            <li><a href="#" class="account-toggle"><i class="pe-7s-config"></i></a>
+                                <ul class="account-menu" id="accountmenu">
+                                    <script>login_function("{{email}}","{{name}}");</script>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Header Cart -->
+                    <div class="header-cart">
+                        <!-- Cart Toggle -->
+                        <a class="cart-toggle" href="#">
+                            <i class="pe-7s-cart"></i>
+                            <span id="carts_amount">0</span>
+                        </a>
+                        <!-- Mini Cart Brief -->
+                        <div class="mini-cart-brief text-left">
+                            <!-- Cart Products -->
+                            <div class="all-cart-product clearfix" id="cart-products">
+                            </div>
+                            <!-- Cart Total -->
+                            <div class="cart-totals" id="cart-total">
+                                <h5>Total <span>$ 0</span></h5>
+                            </div>
+                            <!-- Cart Button -->
+                            <div class="cart-bottom  clearfix">
+                                <a href="/checkout">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu"></div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER SECTION -->
+
+<!-- PAGE BANNER SECTION -->
+<div class="page-banner-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-banner-content">
+                    <h1>Member page</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Member page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE SECTION START -->
+<div class="page-section section pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 mx-auto">
+                <div class="login-reg-form">
+                    <form action="/changeName" method="post">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12 mb-20">
+                                <label for="r_f_name">名稱</label>										
+                                <input type="text" value="{{name}}" disabled="disabled">
+                            </div>
+                            <div class="col-sm-6 col-xs-12 mb-20">
+                                <label for="r_l_name">新名稱(max15) <span class="required">*</span></label>									
+                                <input id="r_l_name" name="newName" type="text" maxlength="20">
+                            </div>
+                            <div class="col-xs-12" style="vertical-align: middle;">
+                                <input value="變更名稱" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-xs-12 mb-20">
+                                <label for="r_f_name">Email</label>										
+                                <input type="text" value="{{email}}" disabled="disabled">
+                            </div>
+                        </div>
+                    </form>
+                    <form action="/changePassword" method="post">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12 mb-20">
+                                <label for="r_l_name">舊密碼 <span class="required">
+                                    *</span></label>									
+                                <input id="r_l_name" name="oldPassword" type="password" maxlength="20">
+                            </div>
+                            <div class="col-sm-6 col-xs-12 mb-20">
+                                <label for="r_l_name">新密碼(min6 max20) <span class="required">*</span></label>									
+                                <input id="r_l_name" name="newPassword" type="password" minlength="6" maxlength="20">
+                            </div>
+                            <div class="col-xs-12" style="vertical-align: middle;">
+                                <input value="變更密碼" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PAGE SECTION END --> 
+
+<!-- FOOTER TOP SECTION START -->
+
+<!-- FOOTER TOP SECTION END -->  
+
+<!-- FOOTER BOTTOM SECTION START -->
+
+<!-- FOOTER BOTTOM SECTION END -->   
+   
+
+</div>
+<!-- Body main wrapper end -->
+
+
+<!-- Placed JS at the end of the document so the pages load faster -->
+
+<!-- jQuery latest version -->
+<script src="public/shop_static/js/jquery-3.6.0.min.js"></script>
+<script src="public/shop_static/js/jquery-migrate.min.js"></script>
+<!-- Bootstrap js -->
+<script src="public/shop_static/js/bootstrap.bundle.min.js"></script>
+<!-- Plugins js -->
+<script src="public/shop_static/js/plugins.js"></script>
+<!-- Ajax Mail js -->
+<script src="public/shop_static/js/ajax-mail.js"></script>
+<!-- Main js -->
+<script src="public/shop_static/js/main.js"></script>
+
+</body>
+
+</html>

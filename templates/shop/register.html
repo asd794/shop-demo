@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Outside - Minimalist Ecommerce HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    
+    
+    <!-- All CSS Files -->
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./public/shop_static/css/bootstrap.min.css">
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="./public/shop_static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/shop_static/css/pe-icon-7-stroke.css">
+    <!-- Plugins css file -->
+    <link rel="stylesheet" href="./public/shop_static/css/plugins.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="./public/shop_static/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="./public/shop_static/css/responsive.css">
+
+    <!-- Modernizr JS -->
+    <script src="./public/shop_static/js/modernizr-2.8.3.min.js"></script>
+
+    
+</head>
+
+<body>
+
+<!-- Body main wrapper start -->
+<div class="wrapper">
+
+<!-- START HEADER SECTION -->
+<header class="header-section section sticker">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <!-- logo -->
+                <div class="header-logo">
+                    <a href="/index"><img src="public/shop_static/picture/logo.png" alt="main logo"></a>
+                </div>
+            </div>
+            <div class="col-auto d-flex">
+                <!-- header-search & total-cart -->
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="/index">Home</a>
+
+                        </li>
+                        <li><a href="/shop">shop</a>
+
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- header-search & total-cart -->
+                <div class="header-option-btns d-flex">
+                    <!-- header-search -->
+
+                    <!-- header Account -->
+                    <div class="header-account">
+                        <ul>
+                            <li><a href="#" class="account-toggle"><i class="pe-7s-config"></i></a>
+                                <ul class="account-menu">
+                                    <li><a href="/login">Log in</a></li>
+                                    <li><a href="/register">Register</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Header Cart -->
+                    <div class="header-cart">
+                        <!-- Cart Toggle -->
+                        <a class="cart-toggle" href="#">
+                            <i class="pe-7s-cart"></i>
+                            <!-- <span>2</span> -->
+                        </a>
+                        <!-- Mini Cart Brief -->
+                        <div class="mini-cart-brief text-left">
+                            <!-- Cart Products -->
+                            <div class="all-cart-product clearfix">
+                                <!-- <div class="single-cart clearfix">
+                                    <div class="cart-image">
+                                        <a href="product-details.html"><img src="public/shop_static/picture/cart-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h5><a href="product-details.html">Le Parc Minotti Chair</a></h5>
+                                        <p>1 x £9.00</p>
+                                        <a href="#" class="cart-delete" title="Remove this item"><i class="pe-7s-trash"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single-cart clearfix">
+                                    <div class="cart-image">
+                                        <a href="product-details.html"><img src="public/shop_static/picture/cart-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="cart-info">
+                                        <h5><a href="product-details.html">DSR Eiffel chair</a></h5>
+                                        <p>1 x £9.00</p>
+                                        <a href="#" class="cart-delete" title="Remove this item"><i class="pe-7s-trash"></i></a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- Cart Total -->
+                            <div class="cart-totals">
+                                <h5>Total <span>$ 0</span></h5>
+                            </div>
+                            <!-- Cart Button -->
+                            <div class="cart-bottom  clearfix">
+                                <a href="checkout.html">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu"></div>
+        </div>
+    </div>
+</header>
+<!-- END HEADER SECTION -->
+
+<!-- PAGE BANNER SECTION -->
+<div class="page-banner-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-banner-content">
+                    <h1>Register page</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Register page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE SECTION START -->
+<div class="page-section section pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 mx-auto">
+                <div class="login-reg-form">
+                    <form action="/signup" method="post">
+                        <div class="row">
+                            <div class="col-xs-12 mb-20">
+                                <label for="r_f_name">Name <span class="required">*</span></label>										
+                                <input id="r_f_name" type="text" name="name" required>
+                            </div>
+                            <div class="col-xs-12 mb-20">
+                                <label for="r_email">Email <span class="required">*</span></label>										
+                                <input id="r_email" type="email" name="email" required>
+                            </div>
+                            <div class="col-xs-12 mb-20">
+                                <label class="" for="r_password">password<span class="required">*</span></label>
+                                <input id="r_password" type="password" name="password" required>
+                            </div>
+                            <div class="col-xs-12 mb-20">
+                                <label class="" for="r_c_password">Confirm password<span class="required">*</span></label>
+                                <input id="r_c_password" type="password" name="c_password" required>
+                            </div>
+                            <!-- <div class="col-xs-12 mb-20">
+                                <input id="rememberme" type="checkbox">
+                                <label for="rememberme">I agree <a href="#">Terms &amp; Condition</a></label>
+                            </div> -->
+                            <div class="col-xs-12">
+                                <input value="register" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PAGE SECTION END --> 
+
+<!-- FOOTER TOP SECTION START -->
+
+<!-- FOOTER TOP SECTION END -->  
+
+<!-- FOOTER BOTTOM SECTION START -->
+
+<!-- FOOTER BOTTOM SECTION END -->   
+   
+
+</div>
+<!-- Body main wrapper end -->
+
+
+<!-- Placed JS at the end of the document so the pages load faster -->
+
+<!-- jQuery latest version -->
+<script src="public/shop_static/js/jquery-3.6.0.min.js"></script>
+<script src="public/shop_static/js/jquery-migrate.min.js"></script>
+<!-- Bootstrap js -->
+<script src="public/shop_static/js/bootstrap.bundle.min.js"></script>
+<!-- Plugins js -->
+<script src="public/shop_static/js/plugins.js"></script>
+<!-- Ajax Mail js -->
+<script src="public/shop_static/js/ajax-mail.js"></script>
+<!-- Main js -->
+<script src="public/shop_static/js/main.js"></script>
+
+
+
+</body>
+
+</html>
