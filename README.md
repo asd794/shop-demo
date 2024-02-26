@@ -4,7 +4,7 @@ domain:cloudflare(proxy)
 
 前端:html,css,js
 
-後端:Flask,MySQL
+後端:Python(flask),MySQL
 
 架構圖:https://docs.google.com/drawings/d/1SERFb3CgHnp4LhvIHnGoA0y3P4wo1AGO_CJIto_1MGo/edit?usp=sharing
 
